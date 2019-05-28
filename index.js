@@ -26,13 +26,14 @@ function currentLine(line) {
   {
     var i;
     lineStr = "The line is currently: ";
+    var arr = [];
     for (i=0;i<line.length;i++)
     {
       var pos= i+1;
-      lineStr = lineStr + pos + ". " + line[i] + ", ";
+      arr.push(pos + ". " + line[i]);
     }
     lineStr = lineStr + arr.join(", ");
-    lineStr = lineStr.substring(0, lineStr.length - 2);
+    //lineStr = lineStr.substring(0, lineStr.length - 2);
   }
   else
   {
