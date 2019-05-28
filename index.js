@@ -1,10 +1,11 @@
-function takeANumber(people, person)
+var currentNum = 0;
+
+function takeANumber(people)
 {
-  
-  var position = people.length;
-  people[position] = person;
-  position = position + 1;
-  var greeting = `Welcome, ${person}. You are number ${position} in line.`;
+  var newNum = currentNum + 1;
+  currentNum++;
+  people.push(newNum);
+  var greeting = `You are number ${newNum}.`;
   return greeting;
 }
 
