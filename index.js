@@ -2,10 +2,8 @@ var currentNum = 0;
 
 function takeANumber(people)
 {
-  var newNum = currentNum + 1;
-  currentNum++;
-  people.push(newNum);
-  var greeting = `You are number ${newNum}.`;
+  people.push(++currentNum);
+  var greeting = `You are number ${currentNum}.`;
   return greeting;
 }
 
@@ -33,6 +31,7 @@ function currentLine(line) {
       var pos= i+1;
       lineStr = lineStr + pos + ". " + line[i] + ", ";
     }
+    lineStr = lineStr + arr.join(", ");
     lineStr = lineStr.substring(0, lineStr.length - 2);
   }
   else
