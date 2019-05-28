@@ -30,7 +30,7 @@ function currentLine(line) {
     for (i=0;i<line.length;i++)
     {
       var pos= i+1;
-      lineStr = lineStr + pos + ". " + line[i] + ", "
+      lineStr = lineStr + pos + ". " + line[i] + ", ";
     }
     lineStr = lineStr.substring(0, lineStr.length - 2);
   }
